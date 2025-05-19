@@ -1,0 +1,190 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000000;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #ffffff;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.capa {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  animation: fadeIn 1.2s ease;
+}
+
+h1 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+h1 span {
+  font-size: 10rem;
+  font-weight: bold;
+  -webkit-text-stroke: 1px white;
+  color: #000000;
+}
+
+.botoes {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.btn {
+  text-decoration: none;
+  background-color: #1a73e8;
+  color: white;
+  padding: 0.50rem 1.25rem;
+  border-radius: 25px;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background-color: #1558b0;
+}
+
+.links {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.links a {
+  color: white;
+  text-decoration: none;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.links a:hover {
+  transform: scale(1.2);
+}
+
+.icon-linkedin {
+  color: #0A66C2;
+}
+
+.icon-instagram {
+  color: #E1306C;
+}
+
+.secao {
+  color: white;
+}
+
+#sobre.secao {
+  height: 100dvh;
+  animation: fadeIn 2s ease;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+#sobre h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 30px;
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.sobre-conteudo {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  gap: 40px;
+  flex-wrap: wrap;
+  width: 100dvh;
+  height: 100dvh;
+}
+
+.foto-perfil {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid white;
+}
+
+.sobre-conteudo p {
+  max-width: 420px;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  text-align: center;
+}
+
+#experiencia {
+  height: 100dvh;
+}
+
+#experiencia h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+#experiencia ul {
+  list-style: none;
+  text-align: center;
+}
+
+#experiencia li {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+#projetos {
+  height: 100vh;
+}
+
+#projetos h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+#projetos ul {
+  list-style: none;
+  text-align: center;
+}
+
+#projetos li {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+#ceu-estrelado {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100vw;
+  height: 100vh;
+  background: black;
+}
+
