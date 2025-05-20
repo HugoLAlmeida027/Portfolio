@@ -18,7 +18,6 @@ for (let i = 0; i < 200; i++) {
   });
 }
 
-// Posição atual do mouse, inicialmente fora do canvas
 const mouse = { x: -1000, y: -1000 };
 
 // Distância mínima para as estrelas fugirem do mouse

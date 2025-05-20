@@ -32,7 +32,7 @@ h1 {
 h1 span {
   font-size: 10rem;
   font-weight: bold;
-  -webkit-text-stroke: 1px white;
+  -webkit-text-stroke: 3px white;
   color: #000000;
 }
 
@@ -72,14 +72,6 @@ h1 span {
 
 .links a:hover {
   transform: scale(1.2);
-}
-
-.icon-linkedin {
-  color: #0A66C2;
-}
-
-.icon-instagram {
-  color: #E1306C;
 }
 
 .secao {
@@ -145,12 +137,51 @@ h1 span {
 
 #experiencia ul {
   list-style: none;
-  text-align: center;
+  text-align:center;
 }
 
 #experiencia li {
   font-size: 1.2rem;
   margin-bottom: 0.5rem;
+}
+
+.container-experiencias {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.card-experiencia {
+  background: rgb(0, 0, 0);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 20px;
+  width: 300px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-experiencia:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(255, 255, 255, 0.1);
+}
+
+.card-experiencia h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.card-experiencia i {
+  font-size: 40px;               
+  display: flex;            
+  justify-content: center; 
+  margin-bottom: 10px;
+}
+
+.card-experiencia p {
+  font-size: 1rem;
+  line-height: 1.5;
 }
 
 #projetos {
